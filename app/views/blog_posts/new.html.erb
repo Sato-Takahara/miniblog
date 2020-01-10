@@ -1,0 +1,10 @@
+ <div class= "articles">
+<%= form_tag('/blog_posts', method: :post) do %>
+    <h3>
+     New Post 
+    </h3>
+    <p><input type="text" name="title" placeholder="Airticle Title"></p>
+    <p><textarea name="text" placeholder="Text" rows="50" cols="100" wrap="hard"></textarea></p>
+    <p><input type="submit" value="Publish"></p>
+  <% end %>
+</div>

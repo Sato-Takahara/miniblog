@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miniblog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+</head>
+   <body>
+    
+    
+    <header class="header">
+       <p class="site-title-sub">----- Care for Daily Small Awareness  -----</p>
+       <h1><a class="site-title" href= "/">MiniBlog</a></h1>
+      <div class="buttons">
+        <% if user_signed_in? %>  
+          <a class="button" href="blog_posts/new">Post</a>
+        <a class="button" href="#">About</a>
+        <a class="button" href="#">Contact</a>
+       <div class="button"><%= link_to "Log Out", destroy_user_session_path, method: :delete %></div>
+        <% else %>
+        <p class="button"><%= link_to "Login", new_user_session_path, class: 'post' %></p>
+        <a class="button" href="#">About</a>
+        <a class="button" href="#">Contact</a>
+        </div>
+        <% end %>
+
+       </div>
+    </header>  
+
+    <%= yield %>
+    <!--yeildには各viewで作られたデータが渡される。yeildはrailsフレームワークの機能。-->
+
+    <footer class="footer">
+      <p>
+        Copyright MiniBlog 2020.
+      </p>
+    </footer>
+  </body>
+</html>

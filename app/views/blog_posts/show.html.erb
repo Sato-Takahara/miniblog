@@ -1,0 +1,15 @@
+ <div class= "articles">
+   
+   <div class= "show">
+ <P class="date"><%= @post.created_at.strftime("%Y/%m/%d") %></P>
+ <h2 class="show_title"><%= @post.title %></h2>
+ <div style="white-space:pre-wrap">
+    <%= @post.text %></div>
+    </div>
+    
+   <div class ="buttons">
+      <% if user_signed_in?%>
+        <div class="button"><%= link_to 'Edit', "/blog_posts/#{@post.id}/edit", method: :get %></div>
+        <div class="button"><%= link_to 'Delete', "/blog_posts/#{@post.id}", method: :delete %></div>      <% end %>
+   </div>
+</div>

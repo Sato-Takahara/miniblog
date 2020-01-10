@@ -1,0 +1,169 @@
+
+a {
+  text-decoration: none;
+  
+}
+
+
+html {
+     box-sizing: border-box;
+    background-color: #D7D7D7;
+
+}
+
+  
+body{
+
+}
+.header {
+      margin: 50px 100px;
+  color: #fff;
+  text-align: center;
+  height: 300px;
+  background-color: #2D5B75;
+
+}
+header a:visited{
+color: white;
+}
+
+
+
+
+.site-title-sub {
+    margin: 0 0 30px;
+    line-height:3;
+    font-family: 'Times', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.site-title {
+  font-family: 'Anton', sans-serif;
+  line-height:3;
+  font-weight: bold;
+    font-size: 100;
+    text-decoration: none;
+  letter-spacing: 10px;
+
+    
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+   font-family: 'Anton', sans-serif;
+   
+    width: 100px;
+    padding: 10px;
+    margin: 50px 100px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.button a:visited{
+color: white;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.articles {
+    font-family: 'Times', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+
+}
+
+ .list{
+   color: black;
+     justify-content: center;
+    text-decoration: none;
+  background-color: #fff;
+  border-radius: 5px;
+      font-size: 15px;
+  overflow: hidden;
+  height: 150px;
+  margin: 30px auto;
+  width: 900px;
+ }
+
+.text{
+  margin: 30px 100px;
+}
+.list:hover {
+    opacity: 0.8;
+}
+
+ .date{
+  font-size: 15px;
+ margin: 30px;
+ }
+ .title{
+    font-family: 'Robot', sans-serif;
+    padding: 0px;
+    font-weight: Bold;
+    font-size: 40px;
+    line-height: 3px;
+    text-align: center;
+    margin: 10px;
+
+  }
+
+
+.show_title{
+  font-family: 'Robot', sans-serif;
+      font-size: 40px;
+    font-weight: Bold;
+
+}
+
+ .show{
+     justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-top: 50px;
+  padding:  50px 100px 100px;
+  margin: 30px auto;
+  width: 700px;
+ }
+ 
+
+
+.footer{
+   font-family: 'Times', sans-serif;
+       justify-content: center;
+             margin: 100px 0px  0px 0px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  height: 100px;
+  background-color: #2D5B75;
+
+}
+
+.done{
+     color: black;
+     justify-content: center;
+       text-align: center;
+
+  background-color: #fff;
+  border-radius: 5px;
+      font-size: 15px;
+  overflow: hidden;
+  height: 150px;
+  margin: 30px auto;
+  width: 900px;
+  
+}
+

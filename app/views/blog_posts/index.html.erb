@@ -1,0 +1,16 @@
+ <div class= "articles">
+  <% @posts.each do |post|%>
+  <a class="list" href="/blog_posts/<%= post.id %>">
+   <div class= "list">
+    <P class="date"><%= post.created_at.strftime("%Y/%m/%d") %></P>
+    <P class="title"><%= post.title %></P>
+      <div class="text"><%= post.text.slice(1..200)%></div>
+    </div>
+   </a>
+  <% end %>
+    <%= paginate(@posts) %>
+
+<div>
+
+  
+
